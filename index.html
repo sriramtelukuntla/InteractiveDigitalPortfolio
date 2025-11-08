@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Portfolio — Sri Ram Telukuntla</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Sri Ram Telukuntla</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Sri Ram</span></h1>
+          <p class="lead">Information Technology Student • Web Developer & AI/ML Enthusiast • Passionate about building intelligent, interactive solutions.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="sriramresume.pdf" download>Download Resume</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/sriramtelukuntla" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sriram-telukuntla" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="sriramprofilepic.jpg" alt="Sri Ram Telukuntla" class="profile-pic">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p>I'm a passionate and performance-driven Information Technology student with strong interests in Full Stack Development, Artificial Intelligence, and Cloud Computing. I enjoy solving real-world problems using technology and continuously learning modern frameworks and tools to stay industry-ready.</p>
+            <ul class="info-list">
+              <li><strong>Location:</strong> Hyderabad, India</li>
+              <li><strong>Education:</strong> B.Tech in Information Technology — Bharat Institute of Engineering and Technology (CGPA: 7.71)</li>
+              <li><strong>Email:</strong> sriramgupta2004@gmail.com</li>
+              <li><strong>Phone:</strong> +91-8639842718</li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sriram-telukuntla" target="_blank"><i class="fab fa-linkedin"></i> Profile</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/sriramtelukuntla" target="_blank"><i class="fab fa-github"></i> sriramtelukuntla</a></li>
+            </ul>
+          </div>
+
+          <div class="skills-preview">
+            <h3>Quick Skills</h3>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">Java</div>
+            <div class="skill-pill">C</div>
+            <div class="skill-pill">React.js</div>
+            <div class="skill-pill">HTML & CSS</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">MySQL</div>
+            <div class="skill-pill">Git & GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Programming</h4>
+            <p>Java, Python, C</p>
+          </div>
+          <div class="skill">
+            <h4>Web Development</h4>
+            <p>HTML, CSS, JavaScript, React.js, Responsive Design</p>
+          </div>
+          <div class="skill">
+            <h4>Database & Tools</h4>
+            <p>MySQL, GitHub, VS Code, Jupyter Notebook</p>
+          </div>
+          <div class="skill">
+            <h4>Soft Skills</h4>
+            <p>Problem Solving, Analytical Thinking, Teamwork, Leadership, Adaptability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <article class="experience-item">
+          <h3>Front-End Web Development Intern — Edunet Foundation (IBM SkillsBuild & AICTE)</h3>
+          <p><strong>Aug 21, 2025 – Oct 2, 2025</strong></p>
+          <ul>
+            <li>Completed a 6-week internship program on Front-End Web Development under the IBM SkillsBuild initiative.</li>
+            <li>Gained hands-on experience with HTML, CSS, JavaScript, and responsive web design principles.</li>
+            <li>Developed and deployed an interactive digital portfolio using GitHub Pages.</li>
+            <li>Worked under mentorship to present real-world web solutions.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card" data-type="ml">
+            <h3>MRI-Based Brain Tumour Detection using Deep Learning</h3>
+            <p>Developed CNN and Vision Transformer models to classify MRI brain scans (No Tumor, Glioma, Meningioma, Pituitary). Compared model performance using TensorFlow, Keras, and OpenCV.</p>
+            <p><strong>Tools:</strong> Python, TensorFlow, Keras, Google Colab</p>
+            <a href="https://github.com/sriramtelukuntla/MRI-BRAIN-TUMOR" target="_blank">View Code</a>
+          </article>
+
+          <article class="project-card" data-type="web">
+            <h3>Interactive Digital Portfolio</h3>
+            <p>Designed and developed a responsive, interactive personal portfolio website using HTML, CSS, and JavaScript. Deployed via GitHub Pages for public accessibility.</p>
+            <a href="https://github.com/sriramtelukuntla/InteractivePortfolio" target="_blank">View Code</a>
+          </article>
+
+          <article class="project-card" data-type="ai">
+            <h3>Dream Space: AI Powered Interior Designer</h3>
+            <p>Developed a web-based AI platform for interior design using Generative AI, NLP, and 3D rendering. Integrated Python (Flask), React.js, and GPU-accelerated rendering.</p>
+            <p><strong>Tools:</strong> TensorFlow, CUDA, VTK/Three.js, React.js</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <h2 class="section-title">Certificates & Achievements</h2>
+        <ul>
+          <li><strong>UI Developer – Infosys Foundation (ICT Academy)</strong> (Aug–Sep 2025) — Completed with Grade A.</li>
+          <li><strong>Geo-data Sharing and Cyber Security – ISRO (IIRS Dehradun)</strong> (Dec 2024) — Grade A+ with 90% attendance.</li>
+          <li><strong>Smart India Hackathon (SIH) 2025 – Internal Hackathon Participant</strong> — Participated at BIET, Telangana.</li>
+          <li><strong>Artificial Intelligence Fundamentals – IBM SkillsBuild</strong> (Issued Oct 2025) — Certified in AI fundamentals.</li>
+          <li><strong>IT Department Head Coordinator</strong> — Managed 5 events, led 20+ members during College Fest 2025.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h3>Let's connect</h3>
+            <p>Email me at: 
+              <a href="mailto:sriramgupta2004@gmail.com?subject=Hello%20Sri%20Ram&body=Hi%20Sri%20Ram,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards," target="_blank">
+                sriramgupta2004@gmail.com
+              </a>
+            </p>
+            <ul class="contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> Door No-9-61/SP, Road No:2, Madhura Nagar, Almasguda, Hyderabad - 500058</li>
+              <li><i class="fas fa-phone"></i> +91-8639842718</li>
+              <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sriram-telukuntla" target="_blank">LinkedIn</a></li>
+              <li><i class="fab fa-github"></i> <a href="https://github.com/sriramtelukuntla" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sri Ram Telukuntla</p>
+      <p><small>Hosted on GitHub Pages</small></p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2" defer></script>
+</body>
+</html>
